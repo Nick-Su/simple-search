@@ -7,6 +7,7 @@ const FullUsernamesPage = (): ReactElement => {
             <p>John Smith</p>
             <p>King Orwell</p>
             <p>Tom Hanson</p>
+            <p>Joanna Stingrey</p>
         </>
     )
 }
