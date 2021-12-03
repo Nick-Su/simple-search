@@ -1,0 +1,13 @@
+.search-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#search-btn {
+    height: 54px;
+    margin-left: 0.1em;
+}
+
+.search-input-outlined  {
+    width: 100%;
+}

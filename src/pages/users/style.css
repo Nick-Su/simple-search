@@ -1,0 +1,9 @@
+.user-name-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-name-list-container > div {
+    margin-top: 1em;
+}

@@ -1,0 +1,25 @@
+.search-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-form-container {
+    margin-top: 2em;
+    width: 45%;
+}
+
+#search-logo {
+    width: 35%;
+}
+
+.error-text {
+    font-size: 18px;
+    color: darkred;
+}
+
+.success-text {
+    color: green
+}

@@ -1,0 +1,9 @@
+.email-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-cards-container > div {
+    margin-top: 1em;
+}
