@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 import {
   BrowserRouter as Router,
   Routes, 
@@ -8,8 +8,8 @@ import SearchPage from './pages/search/SearchPage'
 import EmailPage from './pages/email/EmailPage'
 import UsersPage from './pages/users/UsersPage'
 import PhonePage from './pages/phones/PhonePage'
-import IpPage from './pages/ip/IpPage';
-import FullUsernamesPage from './pages/full-usernames/FullUsernamesPage';
+import IpPage from './pages/ip/IpPage'
+import FullUsernamesPage from './pages/full-usernames/FullUsernamesPage'
 
 import './App.css';
 

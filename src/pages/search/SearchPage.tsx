@@ -1,12 +1,12 @@
 import React, { ReactElement, useState } from 'react'
 import { connect } from 'react-redux'
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router'
 
 import SearchForm from '../../components/search-form/SearchForm'
-import { setSearchQuery } from '../../actions/searchQueriesActions';
+import { setSearchQuery } from '../../actions/searchQueriesActions'
 import './style.css'
 
-import { 
+import {
     isEmailValid,
     isUsernameValid,
     isIPValid,
@@ -15,8 +15,8 @@ import {
 } from '../../services/utils/validators';
 
 const SearchPage: React.FC = ({ dispatch, searchString }: any): ReactElement => {
-    const navigate = useNavigate();
-    const [parsedString, setParsedString] = useState("");
+    const navigate = useNavigate()
+    const [parsedString, setParsedString] = useState("")
     const [isFaildToParseString, setIsFaildToParseString] = useState(false)
 
     const onSearchInputChange = (inputValue: string): void => {

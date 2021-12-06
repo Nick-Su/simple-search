@@ -1,6 +1,7 @@
 import React, { ReactElement, useEffect } from 'react'
 import { connect } from 'react-redux'
 import { fetchUsers } from '../../actions/searchQueriesActions'
+import { IUser } from '../../services/models/IUser'
 
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
@@ -15,7 +16,7 @@ const UsersPage: React.FC = ({ dispatch, users}: any): ReactElement => {
     }, [dispatch])
 
     const UsernameList: React.FC = (): ReactElement => {
-        const emailList = users.map((user: any, index: number) => {
+        const emailList = users.map((user: IUser, index: number): ReactElement => {
            return (
                 <React.Fragment key={index}>
                     <Box sx={{ minWidth: 275, maxWidth: 295 }}>

@@ -1,13 +1,13 @@
 import React, { ReactElement, useEffect } from 'react'
 import { connect } from 'react-redux'
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom"
 import { fetchUsers } from '../../actions/searchQueriesActions'
 
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
-
+import { IUser } from '../../services/models/IUser'
 import './style.css'
 
 const PhonePage: React.FC = ({dispatch, users}: any): ReactElement => {
@@ -18,7 +18,7 @@ const PhonePage: React.FC = ({dispatch, users}: any): ReactElement => {
     }, [dispatch])
         
     const PhoneList: React.FC = (): ReactElement => {
-        const emailList = users.map((user: any, index: number) => {
+        const emailList = users.map((user: IUser, index: number): ReactElement => {
             return (
                 <React.Fragment key={index}>
                     <Box sx={{ minWidth: 275, maxWidth: 295 }}>
